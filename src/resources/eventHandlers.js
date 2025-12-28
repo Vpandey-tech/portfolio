@@ -82,10 +82,10 @@ export function isTouchscreenDevice() {
 }
 
 export function touchEvent(coordinates) {
-  if (coordinates.x > 30) {
+  if (coordinates.x > 60) {
     moveDirection.right = 1;
     moveDirection.left = 0;
-  } else if (coordinates.x < -30) {
+  } else if (coordinates.x < -60) {
     moveDirection.left = 1;
     moveDirection.right = 0;
   } else {
@@ -93,10 +93,10 @@ export function touchEvent(coordinates) {
     moveDirection.left = 0;
   }
 
-  if (coordinates.y > 30) {
+  if (coordinates.y > 60) {
     moveDirection.back = 1;
     moveDirection.forward = 0;
-  } else if (coordinates.y < -30) {
+  } else if (coordinates.y < -60) {
     moveDirection.forward = 1;
     moveDirection.back = 0;
   } else {
@@ -106,7 +106,7 @@ export function touchEvent(coordinates) {
 }
 
 export function createJoystick(parent) {
-  const maxDiff = 62; //how far drag can go
+  const maxDiff = 125; //how far drag can go
   const stick = document.createElement("div");
   //stick.classList.add("joystick");
   stick.setAttribute("id", "joystick");

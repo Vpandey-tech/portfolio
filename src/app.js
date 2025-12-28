@@ -890,7 +890,7 @@ Ammo().then((Ammo) => {
 
   if (isTouchscreenDevice()) {
     document.getElementById('appDirections').innerHTML =
-      'Use the joystick in the bottom left to move the ball. Please use your device in portrait orientation!';
+      'Use the joystick at the bottom to move the ball. Please use your device in portrait orientation!';
     createJoystick(document.getElementById('joystick-wrapper'));
     document.getElementById('joystick-wrapper').style.visibility = 'visible';
     document.getElementById('joystick').style.visibility = 'visible';
@@ -1004,7 +1004,7 @@ Ammo().then((Ammo) => {
     let touchText, instructionsText;
     if (isTouchscreenDevice()) {
       touchText = 'Touch boxes with your \nfinger to open links';
-      instructionsText = '   Use the joystick in the bottom \nleft of the screen to move the ball.';
+      instructionsText = '   Use the joystick at the bottom \nof the screen to move the ball.';
     } else {
       touchText = 'NOTE: Click on boxes with \nthe mouse to open links';
       instructionsText = 'NOTE: Use the arrow keys on your \n keyboard to move the ball.';
