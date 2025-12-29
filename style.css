@@ -30,7 +30,8 @@ canvas {
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
-  z-index: 1; /* TODO Solve this in HTML */
+  z-index: 1;
+  /* TODO Solve this in HTML */
 }
 
 a,
@@ -45,7 +46,8 @@ select {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  z-index: 2 !important; /* TODO Solve this in HTML */
+  z-index: 2 !important;
+  /* TODO Solve this in HTML */
 }
 
 #overlay {
@@ -100,12 +102,15 @@ select {
   height: 250px;
   position: fixed;
   bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   text-align: center;
   border-radius: 100%;
-  display: flex; /* [1] */
-  justify-content: center; /* [2] */
+  display: flex;
+  /* [1] */
+  justify-content: center;
+  /* [2] */
   align-items: center;
   visibility: hidden;
   opacity: 1;
@@ -122,9 +127,12 @@ select {
   visibility: hidden;
   opacity: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
 }
 
 .preload-overlay {
@@ -235,6 +243,7 @@ select {
   overflow: hidden;
   box-sizing: border-box;
 }
+
 .trinity-rings-spinner .circle {
   position: absolute;
   display: block;
@@ -249,6 +258,7 @@ select {
   border-width: 10px;
   opacity: 0.9;
 }
+
 .trinity-rings-spinner .circle:nth-child(2) {
   height: calc(350px * 0.65);
   width: calc(350px * 0.65);
@@ -256,6 +266,7 @@ select {
   border-width: 8px;
   opacity: 0.7;
 }
+
 .trinity-rings-spinner .circle:nth-child(3) {
   height: calc(350px * 0.45);
   width: calc(350px * 0.45);
@@ -268,22 +279,27 @@ select {
   0% {
     transform: rotateZ(20deg) rotateY(0deg);
   }
+
   100% {
     transform: rotateZ(100deg) rotateY(360deg);
   }
 }
+
 @keyframes trinity-rings-spinner-circle2-animation {
   0% {
     transform: rotateZ(100deg) rotateX(0deg);
   }
+
   100% {
     transform: rotateZ(0deg) rotateX(360deg);
   }
 }
+
 @keyframes trinity-rings-spinner-circle3-animation {
   0% {
     transform: rotateZ(100deg) rotateX(-360deg);
   }
+
   100% {
     transform: rotateZ(-360deg) rotateX(360deg);
   }
@@ -302,12 +318,15 @@ select {
     color: transparent;
   }
 }
+
 .loader__dot {
   animation: 1s blink infinite;
 }
+
 .loader__dot:nth-child(2) {
   animation-delay: 250ms;
 }
+
 .loader__dot:nth-child(3) {
   animation-delay: 500ms;
 }
@@ -328,6 +347,7 @@ select {
   from {
     opacity: 0.9;
   }
+
   to {
     opacity: 0;
     display: none;
