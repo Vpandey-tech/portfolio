@@ -94,7 +94,7 @@ function RotatingGlobe() {
 
 export function AboutHero() {
   const phrase =
-    'Building robust full stack platforms and cutting-edge AI systems.';
+    'Architecting high-scale full stack platforms and autonomous agentic AI systems.';
 
   return (
     <section className='container relative px-6 pb-20 pt-32 md:px-12 md:pt-48'>
@@ -108,10 +108,20 @@ export function AboutHero() {
         <div className='flex flex-col items-center lg:col-span-4 lg:items-start lg:ps-10'>
           <RotatingGlobe />
           <p className='mt-10 text-center text-base font-light leading-relaxed text-muted-foreground md:text-lg lg:text-left'>
-            I help companies build and deploy intelligent software. From
-            database architectures to real-time LLM-powered systems and seamless
-            interactive frontends, I design end-to-end applications that are
-            performant and scalable.
+            I don&apos;t just write code; I architect systems that scale under
+            pressure. As the Tech Lead at{' '}
+            <a
+              href='https://technewity.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary'
+            >
+              Technewity Labs
+            </a>
+            , I translate complex product ideas into high-throughput database
+            schemas, real-time LLM-powered agentic pipelines, and bulletproof
+            user interfaces. If it&apos;s laggy or unoptimized, it&apos;s not my
+            style.
           </p>
         </div>
       </div>

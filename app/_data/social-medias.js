@@ -16,6 +16,10 @@ export const socialMedias = [
     title: 'Email',
   },
   {
+    href: 'https://technewity.com',
+    title: 'Company',
+  },
+  {
     href: '/resume.pdf',
     title: 'Resume',
   },

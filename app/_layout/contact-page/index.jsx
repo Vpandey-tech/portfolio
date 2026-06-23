@@ -236,10 +236,10 @@ export function ContactPage() {
                 vp983351@gmail.com
               </a>
               <a
-                href='tel:+917887671316'
+                href='tel:+917410112631'
                 className='mt-1 block text-lg font-light hover:underline'
               >
-                +91 78876 71316
+                +91 74101 12631
               </a>
             </div>
 

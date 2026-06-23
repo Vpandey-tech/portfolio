@@ -66,13 +66,13 @@ export function UserDetails({ transformX }) {
             </a>
           </div>
           <div>
-            <a href='tel:+917887671316'>
+            <a href='tel:+917410112631'>
               <MagneticButton
                 variant='outline'
                 size='md'
                 className='w-full border-muted-foreground'
               >
-                +91 78876 71316
+                +91 74101 12631
               </MagneticButton>
             </a>
           </div>

@@ -17,7 +17,7 @@ export function Header() {
       animate='enter'
     >
       <Image
-        src='/images/vivek-hero-underwater-v2.png'
+        src='/images/vivek-hero-underwater-v3.png'
         className='object-cover'
         style={{ objectPosition: 'center center' }}
         fill={true}
